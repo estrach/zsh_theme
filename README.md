@@ -1,5 +1,5 @@
 # zsh_theme
-This theme is built on the classic lukerandall theme which closely resembles bash.  Added to this theme is extra information on the prompt when using the command line utility screen.  When using screen the session name will appear in purple square brackets to inform the user what session they are using.  This is useful when switching between multiple session which handle different tasks.
+This theme is built on the classic lukerandall theme which closely resembles bash.  Added to this theme is extra information on the prompt when using the command line utility screen.  When using screen the session name will appear in purple square brackets to inform the user which session they are using.  This is useful when switching between multiple sessions for handling different tasks.
 
 # quick start
 ## Using screen to create a new session
