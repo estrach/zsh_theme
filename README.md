@@ -9,7 +9,7 @@ start a session with the name hello_world:
 Within the session:
 > exit
 ## Session switching
-exit to the main terminal with the control sequence hold <CTRL> then press <A> then <D>
+exit to the main terminal with the control sequence hold \<CTRL\> then press \<A\> then \<D\>
 ## Rejoin an exisiting session
 > screen -Rd hello_world
 ## Multisession use
