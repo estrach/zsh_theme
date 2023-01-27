@@ -1,7 +1,10 @@
 # zsh_theme
-This theme is built on the classic lukerandall theme which closely resembles bash.  Added to this theme is extra information on the prompt when using the command line utility screen.  When using screen the session name will appear in purple square brackets to inform the user which session they are using.  This is useful when switching between multiple sessions for handling different tasks.
+This theme is built on the classic lukerandall theme which closely resembles bash.  This theme adds extra information to the prompt when using the command line utility screen.  When using screen the session name will appear in purple square brackets to inform the user which session they are using.  This is useful when switching between multiple sessions for handling different tasks.
 
-# quick start
+# Installation
+Copy the file euan.zsh-theme to the oh-my-zsh themes folder (typically located here: ~/.oh-my-zsh/themes).  Update the ZSH_THEME variable in .zshrc (~/.zshrc) to "ZSH_THEME=euan".  Reload the zshrc file (source ~/.zshrc). 
+
+# Quick start
 ## Using screen to create a new session
 start a session with the name hello_world:
 > screen -S hello_world
