@@ -12,6 +12,8 @@ function my_git_prompt_info() {
 function session_name(){
   if [ -n "$STY" ]; then
     echo " [$(echo $STY | sed 's/[0-9]*\.//')]"
+  elif [ -n "$TMUX" ]; then
+    echo " [$(tmux display-message -p '#S')]"
   fi
 }
 
