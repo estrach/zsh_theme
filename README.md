@@ -8,6 +8,18 @@ Copy the file euan.zsh-theme file to the oh-my-zsh themes folder (typically loca
 git clone https://github.com/estrach/zsh_theme.git ~/zsh_theme && ln -sf ~/zsh_theme/euan.zsh-theme ~/.oh-my-zsh/themes && sed -i 's/ZSH_THEME=.*/ZSH_THEME=euan/g' ~/.zshrc && source ~/.zshrc
 ```
 
+## Session name
+Add the following to your `~/.zshrc` file to enable session name on prompt:
+```
+get_mux_session_name () {
+  if [ -n "$STY" ]; then
+    (echo $STY | sed 's/[0-9]*\.//')
+  elif [ -n "$TMUX" ]; then
+    tmux display-message -p '#S'
+  fi
+}
+```
+
 # Quick start
 ## Using screen to create a new session
 start a session with the name hello_world:
