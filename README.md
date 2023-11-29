@@ -19,20 +19,3 @@ get_mux_session_name () {
   fi
 }
 ```
-
-# Quick start
-## Using screen to create a new session
-start a session with the name hello_world:
-> screen -S hello_world
-## Exit the session
-Within the session:
-> exit
-## Session switching
-exit to the main terminal with the control sequence hold \<CTRL\> and press \<A\> then \<D\>
-## Rejoin an exisiting session
-> screen -Rd hello_world
-## Multisession use
-Screen sessions can be viewed in multiple terminals.
-> screen -x hello_world
-## Kill an unresponsive session
-> screen -X -S hello_world kill
