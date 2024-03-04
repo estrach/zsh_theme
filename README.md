@@ -1,5 +1,5 @@
 # zsh_theme
-This theme is built on the classic lukerandall theme which closely resembles bash.  This theme adds extra information to the prompt when using the terminal multiplexing command line utilities screen or tmux.  When using these utitlies the session name will appear in purple square brackets to inform the user which session they are using.  This can be useful when switching between multiple sessions for handling different tasks.
+This theme is built on the classic lukerandall theme which closely resembles bash.  This theme adds extra information to the prompt in magenta square brackets separated by a `|` symbol.  The extra information includes the terminal multiplexer session name and time when the prompt appeared.  This can be useful when switching between multiple sessions for handling different tasks and determining roughly when the commands were last run.
 
 # Installation
 Copy the file euan.zsh-theme file to the oh-my-zsh themes folder (typically located here: \~/.oh-my-zsh/themes).  Update the ZSH_THEME variable in .zshrc (\~/.zshrc) to "ZSH_THEME=euan".  Reload the zshrc file (source ~/.zshrc).  Alternatively run the following commands:
