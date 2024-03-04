@@ -11,13 +11,13 @@ function my_git_prompt_info() {
 
 function session_name(){
   if [ -n "$STY" ]; then
-    echo " [$(echo $STY | sed 's/[0-9]*\.//')]"
+    echo " $(echo $STY | sed 's/[0-9]*\.//')|"
   elif [ -n "$TMUX" ]; then
-    echo " [$(tmux display-message -p '#S')]"
+    echo "$(tmux display-message -p '#S')|"
   fi
 }
 
-PROMPT='%{$fg_bold[green]%}%n@%m%{$reset_color%} %{$fg_bold[blue]%}%2~%{$reset_color%}%{$fg_bold[magenta]%}$(session_name) %{$reset_color%}$(my_git_prompt_info)%{$reset_color%}%B»%b '
+PROMPT='%{$fg_bold[green]%}%n@%m%{$reset_color%} %{$fg_bold[blue]%}%2~%{$reset_color%} %{$fg_bold[magenta]%}[$(session_name)%D{%K:%M}]%{$reset_color%} $(my_git_prompt_info)%{$reset_color%}%B»%b '
 RPS1="${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}("
