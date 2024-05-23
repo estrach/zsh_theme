@@ -18,7 +18,7 @@ function session_name(){
 }
 
 function get_time(){
-  echo "%D{%K:%M}"
+  echo "%D{%H:%M}"
 }
 
 function additional_info() {
